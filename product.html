@@ -1,0 +1,96 @@
+<!-- Sarah Bedn - 20214949, Ranya Ouzaouit - 20251056 -->
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OnlineShop - Produit</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="./assets/scripts/shared.js"></script>
+    <script type="text/javascript" src="./assets/scripts/product.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="./index.html">
+            <img alt="logo" src="./assets/img/logo.svg" title="Accueil" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li class="active"><a href="./products.html">Produits</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li>
+              <a
+                class="shopping-cart"
+                href="./shopping-cart.html"
+                title="Panier"
+              >
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                  <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                </span>
+                <span class="count"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <article id="product-section">
+        <h1 id="product-name"></h1>
+        <div class="row">
+          <div class="col">
+            <img
+              id="product-image"
+              alt="Manette Xbox 360"
+              src="./assets/img/xbox-controller.png"
+            />
+          </div>
+          <div class="col">
+            <section>
+              <h2>Description</h2>
+              <p id="product-desc"></p>
+            </section>
+            <section>
+              <h2>Caractéristiques</h2>
+              <ul id="product-features"></ul>
+            </section>
+            <hr />
+            <form class="pull-right" id="add-to-cart-form">
+              <label for="product-quantity">Quantité:</label>
+              <input
+                class="form-control"
+                id="product-quantity"
+                type="number"
+                value="1"
+                min="1"
+              />
+              <button class="btn" title="Ajouter au panier" type="submit">
+                <i class="fa fa-cart-plus"></i>&nbsp; Ajouter
+              </button>
+            </form>
+            <p>Prix: <strong id="product-price"></strong></p>
+          </div>
+        </div>
+      </article>
+    </main>
+    <div id="dialog">
+      <h3 style="color: white">Le produit a ete ajoute au panier</h3>
+    </div>
+    <footer>
+      <p>Par Sarah Bedn et Ranya Ouzaouit</p>
+    </footer>
+  </body>
+</html>

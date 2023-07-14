@@ -1,0 +1,86 @@
+<!-- Sarah Bedn - 20214949, Ranya Ouzaouit - 20251056 -->
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OnlineShop - Produits</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="./assets/scripts/shared.js"></script>
+    <script type="text/javascript" src="./assets/scripts/products.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="./index.html">
+            <img alt="logo" src="./assets/img/logo.svg" title="Accueil" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li class="active"><a href="./products.html">Produits</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li>
+              <a
+                class="shopping-cart"
+                href="./shopping-cart.html"
+                title="Panier"
+              >
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                  <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                </span>
+                <span class="count">3</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="sidebar" aria-label="Filtres">
+        <section>
+          <h2>Catégories</h2>
+          <div class="btn-group vertical" id="product-categories">
+            <button id="category-cameras">Appareils photo</button>
+            <button id="category-consoles">Consoles</button>
+            <button id="category-screens">Écrans</button>
+            <button id="category-computers">Ordinateurs</button>
+            <button id="category-all" class="selected">
+              Tous les produits
+            </button>
+          </div>
+        </section>
+        <section>
+          <h2>Classement</h2>
+          <div class="btn-group vertical" id="product-criteria">
+            <button class="selected" id="sort-by-price-asc">
+              Prix (bas-haut)
+            </button>
+            <button id="sort-by-price-desc">Prix (haut-bas)</button>
+            <button id="sort-by-name-asc">Nom (A-Z)</button>
+            <button id="sort-by-name-desc">Nom (Z-A)</button>
+          </div>
+        </section>
+      </section>
+      <article>
+        <span class="right-header" id="products-count">13 produits</span>
+        <h1>Produits</h1>
+        <div class="products" id="products-list"></div>
+      </article>
+    </main>
+    <footer>
+      <p>Par Sarah Bedn et Ranya Ouzaouit</p>
+    </footer>
+  </body>
+</html>
